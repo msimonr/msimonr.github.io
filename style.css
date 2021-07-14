@@ -1,0 +1,144 @@
+
+/* Fuente montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --background: #24252A;
+    --font-color: #edf0f1;
+    --detalle:  #25cf96;
+    --background-nav: #2a2c31;
+    /*  #1d1e22
+        #2e3036
+        #2a2c31
+    */
+}
+
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+    font-family: "Montserrat", sans-serif;
+    color: var(--font-color);
+}
+
+
+li, header p, li a{
+    /* font-family: "Montserrat", sans-serif; */
+    font-weight: 500;
+    font-size: 1.0em;
+    color: var(--font-color);
+    text-decoration: none;
+}
+
+#logoName{
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.first{
+    color: var(--detalle);
+    font-weight: bold;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2em 10%;
+    padding-bottom: 0.5em;
+    /* border-bottom: 0.15em solid var(--detalle); */
+}
+
+.menuLinks{
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.menuLinks li{
+    display: inline-block;
+    padding: 0 1.2em;
+}
+
+.menuLinks li a{
+    transition: all 0.3s ease 0s;
+}
+
+.menuLinks li a:hover{
+    color: var(--detalle);
+}
+
+.menuLinks, .menuLinks li, .menuLinks li a {
+    background-color: var(--background-nav);
+    padding: 0.3em;
+    border-radius: 2em;
+}
+
+
+#game {
+    border: 0.1em solid var(--detalle);
+    box-shadow: 0.1em 0.1em 1em black;
+    display:block;
+    margin: 5em auto;
+}
+
+
+.contentBox{
+    margin: 1em;
+    padding: 1em;
+}
+
+h2{
+    color: var(--detalle);
+    margin: 1em 0;
+    text-transform: uppercase;
+}
+
+.contentBox p{
+    margin: 1em 0;
+}
+
+.box{
+    padding: 2em;
+    margin: 2em auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    background-color: var(--background-nav);
+    border-radius: 2em;
+}
+
+.img {
+    border-radius: 1em;
+    box-shadow: 0.1em 0.1em 1em black;
+    max-width: 50em;
+}
+
+/* .box p{
+    padding: 2em;
+    width: 50%;
+    border-radius: 2em;
+} */
+
+.description-box{
+    margin: auto 5em;
+}
+
+.resalte{
+    font-style: italic;
+    color: var(--detalle);
+}
+
+h3 a{
+    text-decoration: none;
+    color: var(--detalle);
+}
+
+#logo{
+    font-size: 1.5em;
+}
+
+.perfil{
+    max-height: 20em;
+}
