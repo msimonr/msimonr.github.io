@@ -25,7 +25,6 @@ body{
 
 
 li, header p, li a{
-    /* font-family: "Montserrat", sans-serif; */
     font-weight: 500;
     font-size: 1.0em;
     color: var(--font-color);
@@ -42,14 +41,81 @@ li, header p, li a{
     font-weight: bold;
 }
 
+
+/* A PARTIR DE ACA PARA LO RESPONSIVE */
+
+.container{
+    display: block;
+    padding: 1em;
+}
+
+.container-row{
+    display: flex;
+}
+
+.container-head{
+    margin-left: 1em;
+}
+
+.row-img, .row-description{
+    display: inline-block;
+}
+
+.row-img, .row-description{
+    margin: 1em;
+    padding: 1em;
+}
+
+.divisor{
+    width: 15em;
+    color: var(--background-nav);
+    height: 0.2em;
+    border-radius: 25%;
+}
+
+@media (max-width: 1000px) {
+    .container-row{
+        display: block;
+    }
+    .row-img, .row-description{
+        display: block;
+    }
+
+    .row-img{
+        align-content: center;
+        text-align: center;
+    }
+
+    .img{
+        width: 50%;
+        min-width: 25em;
+        margin: 0px auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Fin del intento responsive */
+
+
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.2em 10%;
     padding-bottom: 0.5em;
-    /* border-bottom: 0.15em solid var(--detalle); */
-}
+
+ }
 
 .menuLinks{
     list-style: none;
