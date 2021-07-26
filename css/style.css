@@ -185,6 +185,16 @@ body {
     box-shadow: 0.1em 0.1em 0.5em black;
 }
 
+
+/* ventana de snake */
+
+#game {
+    border: 0.1em solid var(--detalle);
+    box-shadow: 0.1em 0.1em 1em black;
+    display: block;
+    margin: 1em auto;
+}
+
 @media (max-width: 1000px) {
     .container-row {
         display: block;
@@ -199,7 +209,7 @@ body {
     }
     .img {
         width: 50%;
-        min-width: 25em;
+        min-width: 15em;
         margin: 0px auto;
     }
     #img-perfil {
@@ -254,16 +264,6 @@ h3 a {
 .footer p {
     /* font-size: 1em; */
     font-weight: 300;
-}
-
-
-/* ventana de snake */
-
-#game {
-    border: 0.1em solid var(--detalle);
-    box-shadow: 0.1em 0.1em 1em black;
-    display: block;
-    margin: 1em auto;
 }
 
 .mi-persona a {
