@@ -263,7 +263,7 @@ h3 a {
     border: 0.1em solid var(--detalle);
     box-shadow: 0.1em 0.1em 1em black;
     display: block;
-    margin: 5em auto;
+    margin: 1em auto;
 }
 
 .mi-persona a {
