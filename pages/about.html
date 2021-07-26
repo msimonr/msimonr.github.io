@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,38 +8,71 @@
     <title>Portfolio MS</title>
     <link rel="stylesheet" href="../style.css">
 </head>
+
 <body>
+
     <!-- Navegacion -->
-    <header>
-        <div id="logoName">
-            <p id="logo"><span class="first">M</span>auricio<span class="first">S</span>imón</p>
+    <nav class="navbar">
+        <div class="logoName">
+            <span class="first">M</span>auricio<span class="first">S</span>imón
         </div>
-        <nav class="menu">
-            <ul class="menuLinks">
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
                 <li><a href="../index.html">Inicio</a></li>
-                <li class="separador">|</li>
                 <li><a href="about.html">Sobre mí</a></li>
-                <li class="separador">|</li>
-                <li><a href="snake.html"> Sorpresa</a></li>
+                <li><a href="snake.html"> Snake</a></li>
             </ul>
-        </nav>
-    </header>
-    <!-- Navegacion -->
-    <div class="contentBox">
-        <h2>Breve descripción de mi persona</h2>
-        <!-- <p>Una lista de algunos proyectos personales con el fin de practicar o aprender una determinada habilidad o tecnología.</p> -->
-        <div class="box">
-            <img class="img perfil" src="../img/me.jpg">
-                <div class="description-box">
-                    <!-- <h3><a href="https://play.google.com/store/apps/details?id=com.dinouy.flexiblestickman&hl=es_UY">Flexible Stickman</a></h3> -->
-                    <p>Soy Mauricio Simón, nací el 16 de marzo del 98.</p>
-                    <p>Desde niño me apasionaban las computadoras y siempre sentí curiosidad por la ciencia así que al terminar el secundario comencé a estudiar ingeniería en computación, en la UdelaR.</p>
-                    <p>Me atrae mucho el campo de la inteligencia artificial, aunque aún no incursione en el. Además me interesa el desarrollo de videojuegos.</p>
-                    <p>Mi tiempo libre lo suelo gastar en aprender cosas nuevas de programación, jugar videojuegos y/o mirar series.</p>
-                    <p><span class="resalte">Me puedes contactar en:</span> <b>mauricio.simon.r@gmail.com</b></p>
-                </div>
         </div>
+    </nav>
+    <!-- Navegacion -->
+
+    <!-- Contenido -->
+    <div class="container">
+        <div class="container-head">
+            <h2>Breve descripción de mi persona</h2>
+        </div>
+        <hr class="divisor">
+        <div class="container-row">
+            <div class="row-img">
+                <img id="img-perfil" src="../img/me.jpg">
+            </div>
+            <div class="row-description mi-persona">
+                <p>Soy Mauricio Simón, nací el 16 de marzo del 98.</p>
+                <p>Desde niño me apasionaban las computadoras y siempre sentí curiosidad por la ciencia así que al terminar el secundario comencé a estudiar ingeniería en computación en la UdelaR, actualmente estoy cursando tercer año.</p>
+                <p>Me interesa el campo de la inteligencia artificial, todos los días me sorprendo con las posibilidades y aplicaciones que vienen con el. Aun no incursione en el, pero espero hacerlo pronto. Además me gusta experimentar con videojuegos,
+                    principalmente utilizando Unity.</p>
+                <p>Mi tiempo libre lo utilizo para aprender cosas nuevas de programación, jugar videojuegos y mirar series. Fanático de <a href="https://es.wikipedia.org/wiki/Los_simuladores" target="_blank">Los Simuladores</a> y de <a href="https://www.youtube.com/watch?v=S_roMeig-YQ"
+                        target="_blank">El Cuarteto de Nos</a>.</p>
+                <p><span class="resalte">Me puedes contactar en:</span> mauricio.simon.r@gmail.com</p>
+            </div>
+        </div>
+        <hr class="divisor">
     </div>
+
+    </div>
+
+    <!-- Contenido -->
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <p>mauricio.simon.r@gmail.com</p>
+            <div class="social-img">
+                <a href="https://github.com/msimonr" target="_blank"><img src="../img/GitHub-Mark-120px-plus.png"></a>
+            </div>
+            <!-- <p>mauricio.simon.r@gmail.com</p> -->
+        </div>
+    </footer>
+    <!-- Footer -->
+
+
 </body>
-<script src="game/game.js"></script>
+<script src="scritps/web.js"></script>
+
 </html>
