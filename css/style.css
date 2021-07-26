@@ -1,0 +1,273 @@
+/* Fuente montserrat */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --background: #24252A;
+    --font-color: #edf0f1;
+    --detalle: #25cf96;
+    --background-nav: #2a2c31;
+    /*  #1d1e22
+        #2e3036
+        #2a2c31
+    */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+    font-family: "Montserrat", sans-serif;
+    color: var(--font-color);
+}
+
+#logoName {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.first {
+    color: var(--detalle);
+    font-weight: bold;
+}
+
+
+/* A PARTIR DE ACA PARA LO RESPONSIVE */
+
+
+/* NavBar */
+
+.navbar {
+    margin: 1em 1em 0 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoName {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 0.08em;
+    margin: .5em;
+    margin-left: 2em;
+}
+
+.navbar-links {
+    margin-right: 1em;
+    border-radius: 1.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: var(--background-nav);
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--font-color);
+    padding: 1em;
+    display: block;
+    transition: all 0.3s ease 0s;
+}
+
+.navbar-links li a:hover {
+    color: var(--detalle);
+}
+
+
+/* toggle */
+
+.toggle-button {
+    position: absolute;
+    top: .75em;
+    right: 1em;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    transition: all 0.3s ease 0s;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: var(--font-color);
+    border-radius: 10px;
+}
+
+.toggle-button.ok {
+    transform: rotate(-45deg);
+}
+
+@media (max-width: 700px) {
+    .toggle-button {
+        display: flex;
+    }
+    .navbar-links {
+        display: none;
+        width: 100%;
+        border-radius: 0em;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar-links li {
+        text-align: center;
+        border-top: 0.01em solid var(--background);
+        border-bottom: 0.01em solid var(--background);
+    }
+    .navbar-links li a {
+        padding: .5em 1em;
+    }
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+
+/* Fin NavBar */
+
+.container {
+    display: block;
+    padding: 1em;
+}
+
+.container-row {
+    display: flex;
+}
+
+.container-head {
+    margin-left: 1em;
+    padding: 1em;
+}
+
+.row-img,
+.row-description {
+    display: inline-block;
+}
+
+.row-img,
+.row-description {
+    margin: 1em;
+    padding: 1em;
+}
+
+.divisor {
+    width: 15em;
+    color: var(--background-nav);
+    height: 0.2em;
+    border-radius: 25%;
+}
+
+#img-perfil {
+    max-width: 20em;
+    border-radius: 0.5em;
+    box-shadow: 0.1em 0.1em 0.5em black;
+}
+
+@media (max-width: 1000px) {
+    .container-row {
+        display: block;
+    }
+    .row-img,
+    .row-description {
+        display: block;
+    }
+    .row-img {
+        align-content: center;
+        text-align: center;
+    }
+    .img {
+        width: 50%;
+        min-width: 25em;
+        margin: 0px auto;
+    }
+    #img-perfil {
+        width: 80%;
+        max-width: 20em;
+        margin: 0px auto;
+    }
+}
+
+
+/* Fin del intento responsive */
+
+h2 {
+    color: var(--detalle);
+    margin: 1em 0;
+    text-transform: uppercase;
+}
+
+.img {
+    border-radius: 0.5em;
+    box-shadow: 0.1em 0.1em 0.5em black;
+    max-width: 50em;
+}
+
+.resalte {
+    font-style: italic;
+    color: var(--detalle);
+}
+
+h3 a {
+    text-decoration: none;
+    color: var(--detalle);
+}
+
+.footer {
+    margin-top: 2em;
+    text-align: center;
+}
+
+.footer img {
+    filter: invert(100%);
+    width: 2em;
+    margin: 1em;
+    transition: all 0.3s ease 0s;
+}
+
+.footer img:hover {
+    transform: translateX(10%);
+    /* width: 2.2em; */
+}
+
+.footer p {
+    /* font-size: 1em; */
+    font-weight: 300;
+}
+
+
+/* ventana de snake */
+
+#game {
+    border: 0.1em solid var(--detalle);
+    box-shadow: 0.1em 0.1em 1em black;
+    display: block;
+    margin: 1em auto;
+}
+
+.mi-persona a {
+    text-decoration: none;
+    color: var(--font-color);
+    font-style: italic;
+}
