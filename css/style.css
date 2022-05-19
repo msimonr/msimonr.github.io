@@ -222,8 +222,9 @@ body {
 
 /* Fin del intento responsive */
 
-h2 {
+h1 {
     color: var(--detalle);
+    font-size: 1.6em;
     margin: 1em 0;
     text-transform: uppercase;
 }
@@ -239,7 +240,7 @@ h2 {
     color: var(--detalle);
 }
 
-h3 a {
+h2 a {
     text-decoration: none;
     color: var(--detalle);
 }
